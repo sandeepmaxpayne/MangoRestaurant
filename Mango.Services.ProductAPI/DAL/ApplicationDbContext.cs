@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Mango.Services.ProductAPI.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace Mango.Services.ProductAPI.DAL
 {
@@ -8,5 +9,7 @@ namespace Mango.Services.ProductAPI.DAL
         {
 
         }
+
+        public DbSet<Product> Products { get; set; }
     }
 }
