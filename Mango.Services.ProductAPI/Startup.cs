@@ -22,7 +22,8 @@ namespace Mango.Services.ProductAPI
         public void ConfigureServices(IServiceCollection services)
         {
             //initialise the DB connection string
-          //  services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
