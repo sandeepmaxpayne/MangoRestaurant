@@ -4,7 +4,7 @@ Mango Restaurant
 
 - Add Migrations in .net Core (Package Manager):
 
-Install-Package Microsoft.EntityFrameworkCore.Tools
-EntityFrameworkCore\Add-Migration firstMigration
-add-migration SecondMigration
-update-database
+Install-Package Microsoft.EntityFrameworkCore.Tools <br>
+EntityFrameworkCore\Add-Migration firstMigration <br>
+add-migration SecondMigration <br>
+update-database <br>
