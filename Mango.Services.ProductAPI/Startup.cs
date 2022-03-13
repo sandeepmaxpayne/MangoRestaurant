@@ -8,6 +8,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using System;
+using Mango.Services.ProductAPI.Repository;
 
 namespace Mango.Services.ProductAPI
 {
@@ -31,6 +32,10 @@ namespace Mango.Services.ProductAPI
             IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
             services.AddSingleton(mapper);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            //Add scope for IRepository and its implements dependency in startu[
+            services.AddScoped<IRepository, ProductRepository>();
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
