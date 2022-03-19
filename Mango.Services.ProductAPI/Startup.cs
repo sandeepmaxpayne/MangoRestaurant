@@ -34,7 +34,7 @@ namespace Mango.Services.ProductAPI
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             //Add scope for IRepository and its implements dependency in startu[
-            services.AddScoped<IRepository, ProductRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
 
 
             services.AddControllers();

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Mango.Services.ProductAPI.Repository
 {
-    public class ProductRepository : IRepository
+    public class ProductRepository : IProductRepository
     {
 
         private ApplicationDbContext _db;

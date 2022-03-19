@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mango.Services.ProductAPI.Repository
 {
-    interface IRepository
+    public interface IProductRepository
     {
         Task<IEnumerable<ProductDto>> GetProducts();
         Task<ProductDto> GetProductById(int productId);
